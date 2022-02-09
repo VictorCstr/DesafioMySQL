@@ -23,15 +23,18 @@
     FROM cliente INNER JOIN pedido
     on pedido.cliente_id = cliente.id
     INNER JOIN item_pedido on item_pedido.pedido_numero = pedido.numero
-    INNER JOIN produto on produto.codigo = item_pedido.produto_codigo ;
+    INNER JOIN produto on produto.codigo = item_pedido.produto_codigo 
+     WHERE pedido.status LIKE "F";
 
 -- Mostre quantos pedidos foram feitos por mês no ano de 2022 (caso você tenha registros neste ano, senão escolha um ano que você tenha cadastrado - Novamente pense em COUNT e GROUP BY).
 	SELECT MONTHNAME(data_pedido) as "Mês" , count(numero) as "Pedidos no Mês" FROM pedido
+    WHERE pedido.status LIKE "F"
     group by MONTH(data_pedido)  ;
 
 -- Mostre quanto foi faturado por mês (leve em conta o valor total de cada pedido - novamente pense em GROUP BY e SUM).
 	SELECT MONTHNAME(data_pedido) as "Mês" , sum(valor_total) as "Total faturado" FROM item_pedido
     INNER JOIN pedido on item_pedido.pedido_numero = pedido.numero
+    WHERE pedido.status LIKE "F"
     group by MONTH(data_pedido) 
     ORDER BY MONTH(data_pedido) ;
 
