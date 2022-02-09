@@ -32,7 +32,8 @@
 -- Mostre quanto foi faturado por mês (leve em conta o valor total de cada pedido - novamente pense em GROUP BY e SUM).
 	SELECT MONTHNAME(data_pedido) as "Mês" , sum(valor_total) as "Total faturado" FROM item_pedido
     INNER JOIN pedido on item_pedido.pedido_numero = pedido.numero
-    group by MONTH(data_pedido)  ;
+    group by MONTH(data_pedido) 
+    ORDER BY MONTH(data_pedido) ;
 
 -- Mostre o valor total do estoque por departamento.
 	SELECT departamento.nome , sum(estoque * preco) FROM PRODUTO inner join DEPARTAMENTO
