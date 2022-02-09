@@ -4,14 +4,15 @@
 
 <p align="center">
  <a href="#computer-o-projeto">Sobre</a> •
- <a href="#dart-objetivo">Objetivo</a> • 
  <a href="#mag_right-atividades-a-desenvolver">Atividades a Desenvolver</a> • 
+   <a href="#mag_right-para-rodar-o-projeto">Como rodar</a> •
+  <a href="#dart-objetivo">Objetivo</a> • 
  <a href="#sunglasses-colaboradores">Colaboradores</a> 
 </p>
 
 <h1 align="center">Desafio #4 (TRIO)</h1> <br><br>
 <p align="center"> 
-  <img src="" width="100%">
+  <img src="https://github.com/VictorCstr/DesafioMySQL/blob/main/assets/esquemaBD.png" width="100%">
 </p>
 
 
@@ -20,17 +21,35 @@
 - Recebemos uma estrutura de um banco de dados simulando um e-commerce, e com ela temos a seguinte tarefa de adicionar diversos dados dentro desta estrutura, e ao final, desenvolver metódos de consulta.
 
 ## :mag_right: Atividades a desenvolver:
+
+ - Este exercício é livre para você inserir dados nas tabelas. Adicione vários dados em todas as tabelas. Crie vários clientes, com vários endereços. Insira muitos produtos em vários departamentos. Crie pedidos em várias datas com meses diferentes (serão necessários para os próximos exercícios).
+
+ - Quantos clientes estão cadastrados na sua base?
+
+- Qual o produto mais caro?
+
+- Qual o produto mais barato?
+
+- Mostre todos os produtos com seus respectivos departamentos.
+
+- Quantos produtos há em cada departamento? Exiba o nome do departamento e a quantidade de produtos que há em cada um. (pense em SUM e GROUP BY)
+
+- Mostre os dados dos pedidos, incluindo nomes dos clientes e nomes dos produtos que foram vendidos.
+
+- Mostre quantos pedidos foram feitos por mês no ano de 2022 (caso você tenha registros neste ano, senão escolha um ano que você tenha cadastrado - Novamente pense em COUNT e GROUP BY).
+
+- Mostre quanto foi faturado por mês (leve em conta o valor total de cada pedido - novamente pense em GROUP BY e SUM).
+
+- Mostre o valor total do estoque por departamento.
+
+## :mag_right: Para rodar o projeto:
 ```bash
-Este exercício é livre para você inserir dados nas tabelas. Adicione vários dados em todas as tabelas. Crie vários clientes, com vários endereços. Insira muitos produtos em vários departamentos. Crie pedidos em várias datas com meses diferentes (serão necessários para os próximos exercícios).
-Quantos clientes estão cadastrados na sua base?
-Qual o produto mais caro?
-Qual o produto mais barato?
-Mostre todos os produtos com seus respectivos departamentos.
-Quantos produtos há em cada departamento? Exiba o nome do departamento e a quantidade de produtos que há em cada um. (pense em SUM e GROUP BY)
-Mostre os dados dos pedidos, incluindo nomes dos clientes e nomes dos produtos que foram vendidos.
-Mostre quantos pedidos foram feitos por mês no ano de 2022 (caso você tenha registros neste ano, senão escolha um ano que você tenha cadastrado - Novamente pense em COUNT e GROUP BY).
-Mostre quanto foi faturado por mês (leve em conta o valor total de cada pedido - novamente pense em GROUP BY e SUM).
-Mostre o valor total do estoque por departamento.
+# Estrutura e inserção de dados
+$ Dentro da pasta src está toda a estrutura da tabela e dados prontos para inserção,
+$ caso queira testar as consultas basta aplicar no mySQL a estrutura primeiramente.
+
+# Consultas
+$ Todos os exercícios estão presentes no script desafios.sql dentro da pasta src.
 ```
 
 ## :dart: Objetivo 
