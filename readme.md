@@ -19,6 +19,7 @@
 
 ## :computer: O projeto 
 - Recebemos uma estrutura de um banco de dados simulando um e-commerce, e com ela temos a seguinte tarefa de adicionar diversos dados dentro desta estrutura, e ao final, desenvolver metódos de consulta.
+- O projeto foi todo feito através de pair programming.
 
 ## :mag_right: Atividades a desenvolver:
 
